@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* HEADER */
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1.5rem;
+    background: linear-gradient(to bottom, white 30%, transparent 100%);
+    color: #B22222;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.logo{
+    width: 300px;
+}
+
+.opcoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: 1.3em;
+}
+
+.opcao {
+    color: #B22222;
+    text-decoration: none;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+
+.opcao::before{
+    margin-left: auto;
+}
+.opcao::after, .opcao::before{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+}
+.opcao:hover::after, .opcao:hover::before{
+    width: 100%;
+}
+
+/* FIM HEADER */
+/* IMAGEM COM SLOGAN */
+.container-imagem {
+    background: url(assets/imagens/paisagem/fundo-restaurante.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    height: 100vh;
+}
+
+.alinha-slogan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 7rem;
+    /* padding: 2rem 0rem 3rem 3rem; */
+}
+.btn-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alinha-slogan h2{
+    font-family: "Roboto Mono", monospace;
+    font-size:50px;
+    color: hsla(39, 32%, 86%, 0.953);
+    font-weight: 900;
+}
+.alinha-slogan h1{
+    font-family: "Anton", sans-serif;
+    font-size: 150px;
+    color: #ffd700;
+    margin-top: -3rem;
+}
+.pedido{
+    width: 200px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #B22222;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.pedido:hover{
+    background-color: #b35e5ef8;
+    border: 3px solid #B22222;
+    transition: 0.35s;
+}
+/* FIM IMAGEM COM SLOGAN */
+/* QUADRADOS COM CARACTERÍSTICAS */
+.container-square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    gap: 2rem;
+    background-color: #e2e2e2f8;
+}
+.square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    background-color: #B22222;
+    gap: 1rem;
+    font-size: 18px;
+    width: 170px;
+    height: 150px;
+}
+.titulo-icon{
+    font-size: 20px;
+}
+.titulo-icon p{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    font-size: 26px;
+}
+/* FIM DOS QUADRADOS COM CARACTERÍSTICAS */
