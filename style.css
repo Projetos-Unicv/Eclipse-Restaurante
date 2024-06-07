@@ -111,24 +111,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem;
-    gap: 2rem;
-    background-color: #e2e2e2f8;
+    padding: 1.5rem;
+    gap: 4rem;
+    background-color: #fff;
 }
 .square{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 2rem 1rem;
     background-color: #B22222;
     gap: 1rem;
     font-size: 18px;
     width: 170px;
-    height: 150px;
+    height: 90px;
 }
 .titulo-icon{
     font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto Mono", monospace;
 }
 .titulo-icon p{
     align-items: center;
@@ -138,4 +142,18 @@
 .icon{
     font-size: 26px;
 }
+
+.frase-efeito{
+    font-family: "Anton", sans-serif;
+    font-size: 1.6em;
+    color: #ffd700;
+    text-shadow: rgb(0, 0, 0) -1px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frase-efeito h2{
+    text-shadow:0.1em #000000;
+}
+
 /* FIM DOS QUADRADOS COM CARACTERÍSTICAS */
